@@ -1,21 +1,16 @@
 import React, { Component } from 'react'
+import CardItem from './CardItem'
+import styles from './app.scss'
 
 class App extends Component {
 
-  faces = ['👹', '😱']
-// faces = ['👹', '😱']
-// matched = []
-// picks = []
   render () {
-    return <div>
+    return <div className={styles}>
       <h1>Memory!</h1>
       <table>
         <tbody>
           <tr>
-            <td />
-            <td />
-            <td />
-            <td />
+            <CardItem />
           </tr>
         </tbody>
       </table>
