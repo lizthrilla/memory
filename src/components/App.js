@@ -91,15 +91,15 @@ class App extends Component {
           </tr>
           <tr>
             <CardItem image={images[0]} isUp={picks.includes(8) || matched.includes(0)} handleClick={() => this.choose(8)} />
-            <CardItem image={images[1]} isUp={picks.includes(9) || matched.includes(1)} handleClick={() => this.choose(1)} />
-            <CardItem image={images[2]} isUp={picks.includes(10) || matched.includes(2)} handleClick={() => this.choose(2)} />
-            <CardItem image={images[3]} isUp={picks.includes(11) || matched.includes(3)} handleClick={() => this.choose(3)} />
+            <CardItem image={images[1]} isUp={picks.includes(9) || matched.includes(1)} handleClick={() => this.choose(9)} />
+            <CardItem image={images[2]} isUp={picks.includes(10) || matched.includes(2)} handleClick={() => this.choose(10)} />
+            <CardItem image={images[3]} isUp={picks.includes(11) || matched.includes(3)} handleClick={() => this.choose(11)} />
           </tr>
           <tr>
-            <CardItem image={images[4]} isUp={picks.includes(12) || matched.includes(4)} handleClick={() => this.choose(4)} />
-            <CardItem image={images[5]} isUp={picks.includes(13) || matched.includes(5)} handleClick={() => this.choose(5)} />
-            <CardItem image={images[6]} isUp={picks.includes(14) || matched.includes(6)} handleClick={() => this.choose(6)} />
-            <CardItem image={images[7]} isUp={picks.includes(15) || matched.includes(7)} handleClick={() => this.choose(7)} />
+            <CardItem image={images[4]} isUp={picks.includes(12) || matched.includes(4)} handleClick={() => this.choose(12)} />
+            <CardItem image={images[5]} isUp={picks.includes(13) || matched.includes(5)} handleClick={() => this.choose(13)} />
+            <CardItem image={images[6]} isUp={picks.includes(14) || matched.includes(6)} handleClick={() => this.choose(14)} />
+            <CardItem image={images[7]} isUp={picks.includes(15) || matched.includes(7)} handleClick={() => this.choose(15)} />
           </tr>
         </tbody>
       </table>
