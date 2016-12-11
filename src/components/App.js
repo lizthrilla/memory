@@ -73,7 +73,8 @@ class App extends Component {
     const picks = this.state.picks
     const matched = this.state.matched
     return <div>
-      <h1>{this.state.won ? 'YOU WIN' : 'Memory!'}</h1>
+      <h1>{this.state.won ? 'YOU WIN' : 'MEMORY'}</h1>
+      <h2> Find and Match the Kittens </h2>
       <table>
         <tbody>
           <tr>
@@ -81,6 +82,24 @@ class App extends Component {
             <CardItem image={images[1]} isUp={picks.includes(1) || matched.includes(1)} handleClick={() => this.choose(1)} />
             <CardItem image={images[2]} isUp={picks.includes(2) || matched.includes(2)} handleClick={() => this.choose(2)} />
             <CardItem image={images[3]} isUp={picks.includes(3) || matched.includes(3)} handleClick={() => this.choose(3)} />
+          </tr>
+          <tr>
+            <CardItem image={images[4]} isUp={picks.includes(4) || matched.includes(4)} handleClick={() => this.choose(4)} />
+            <CardItem image={images[5]} isUp={picks.includes(5) || matched.includes(5)} handleClick={() => this.choose(5)} />
+            <CardItem image={images[6]} isUp={picks.includes(6) || matched.includes(6)} handleClick={() => this.choose(6)} />
+            <CardItem image={images[7]} isUp={picks.includes(7) || matched.includes(7)} handleClick={() => this.choose(7)} />
+          </tr>
+          <tr>
+            <CardItem image={images[0]} isUp={picks.includes(0) || matched.includes(0)} handleClick={() => this.choose(0)} />
+            <CardItem image={images[1]} isUp={picks.includes(1) || matched.includes(1)} handleClick={() => this.choose(1)} />
+            <CardItem image={images[2]} isUp={picks.includes(2) || matched.includes(2)} handleClick={() => this.choose(2)} />
+            <CardItem image={images[3]} isUp={picks.includes(3) || matched.includes(3)} handleClick={() => this.choose(3)} />
+          </tr>
+          <tr>
+            <CardItem image={images[4]} isUp={picks.includes(4) || matched.includes(4)} handleClick={() => this.choose(4)} />
+            <CardItem image={images[5]} isUp={picks.includes(5) || matched.includes(5)} handleClick={() => this.choose(5)} />
+            <CardItem image={images[6]} isUp={picks.includes(6) || matched.includes(6)} handleClick={() => this.choose(6)} />
+            <CardItem image={images[7]} isUp={picks.includes(7) || matched.includes(7)} handleClick={() => this.choose(7)} />
           </tr>
         </tbody>
       </table>
