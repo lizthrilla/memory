@@ -67,11 +67,14 @@ class App extends Component {
       this.setState({ picks: [] })
     }, 3000)
   }
-  resetGame () {
-    this.state = {
+
+  reset () {
+    this.setState({
       matched: [],
+      picks: [],
+      won: false,
       images: shuffle(images)
-    }
+    })
   }
   // For each card in faces:
  // If picks inclues card:
@@ -83,7 +86,7 @@ class App extends Component {
     const matched = this.state.matched
     return <div className={styles}>
       <h1>{this.state.won ? 'YOU WIN' : 'MEMORY'}</h1>
-      {this.state.won ? <Button /> : <Instructions />}
+      {this.state.won ? <Button handleClick={() => this.reset()} /> : <Instructions />}
       <table>
         <tbody>
           <tr>
