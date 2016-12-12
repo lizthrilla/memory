@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import CardItem from './CardItem'
 import styles from './App.scss'
+import Button from './button.js'
+import Instructions from './instructions.js'
 
 import images from '../images.json'
 import shuffle from 'array-shuffle'
@@ -76,7 +78,7 @@ class App extends Component {
     const matched = this.state.matched
     return <div>
       <h1>{this.state.won ? 'YOU WIN' : 'MEMORY'}</h1>
-      <h2> Find and Match the Kittens </h2>
+      {this.state.won ? <Button /> : <Instructions />}
       <table>
         <tbody>
           <tr>
