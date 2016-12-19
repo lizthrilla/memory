@@ -115,6 +115,9 @@ class App extends Component {
           </tr>
         </tbody>
       </table>
+      <footer>
+        <h6>&copy; 2016 Liz Tiller.  Built at The Iron Yard - Tampa </h6>
+      </footer>
     </div>
   }
 }
