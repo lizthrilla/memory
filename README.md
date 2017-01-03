@@ -1,5 +1,5 @@
 # Memory
 ![image of memory cat]
-(react-portfolio/src/components/Memory.png)
+(https://raw.githubusercontent.com/lizthrilla/react-portfolio/master/src/components/Memory.png)
 
 One of my first forays into React. 
